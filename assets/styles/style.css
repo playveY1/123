@@ -86,7 +86,7 @@ body{
     align-items: center;
     cursor: pointer;
     display: none;
-    margin-right: 30px;
+   
   }
   .header__burger span {
     width: 100%;
@@ -411,7 +411,7 @@ body{
     margin-bottom: 40px;
     cursor: pointer;
     transition: all 0.3s;
-    border-radius: 8px;
+    border-radius: 18px;
     opacity: 0;
     transform: scale(1.2);
     position: relative;
@@ -589,19 +589,48 @@ body{
     height: auto;
     object-fit: cover;
 }
+.footer__socials-img-inst{
+    background-image: url(../image/inst.png);
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+
+}
+.footer__socials-img-tg
+{
+    background-image: url(../image/icons8-telegram-48.png);
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    margin-right: 20px;
+}
+.footer__socials-img-viber{
+    background-image: url(../image/icons8-viber-48.png);
+    width: 60px;
+    height: 60px;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.footer__socials{
+    display: flex;
+   
+}
 @media only screen and (max-width: 767px) {
-    .container {
-      padding-left: 10px;
-      padding-right: 10px;
-    }
+  
     /*header*/
     .header__logo-title{
-        font-size: 25px
+        font-size: 20px;
+       
+        
+        padding: 0;
     }
-    .header__logo-title{
-        font-size: 25px;
-        margin: 0 ;
-      }
+    
       .header__menu-item{
         display: none;
       }
@@ -625,6 +654,10 @@ body{
       }
       .main__title{
         font-size: 30px;
+      }
+      .main__text{
+        font-size: 14px;
+        width: 300px;
       }
       /*popularity*/
       .title{
@@ -654,14 +687,15 @@ body{
         position: relative;
       }
       .popularity__img{
-        width: 130px;
-        height: 130px;
+        width: 110px;
+        height: 110px;
         top: -8%;
+        left: 65%;
         transform: rotate(40deg);
       }
       .popularity__img-second{
-        top:89% ;
-        left: 3%;
+        top:93% ;
+        left: 0%;
         transform: rotate(-140deg);
       }
        /*bakery*/
@@ -689,7 +723,7 @@ body{
        .bakery__img{
         width: 150px;
         height: 150px;
-        top: 40%;
+        top: -15%;
         left: 70%;
        }
        .bakery__img2{
@@ -737,19 +771,39 @@ body{
     width: 100px;
   }
   .map__map{
-    width: 500px;
-    height: 300px;
+    width: 300px;
+    height: 200px;
   }
   .map__donut{
-    width: 140px;
-    height: 140px;
+    width: 100px;
+    height: 100px;
   }
   .map__img{
-    width: 50px;
-    height: 50px;
-    top: 21.2%;
-    left: 54.4%;
+    width: 45px;
+    height: 45px;
+    top: 14.2%;
+    left: 58.4%;
   }
+   /*footer*/
+   .footer__github{
+    font-size: 11px;
+   }
+   .footer__school{
+    font-size: 11px;
+   }
+   .footer__socials-img{
+    width: 30px;
+    height: 30px;
+
+   }
+   .footer__socials-img-inst{
+    margin-right: 7px;
+   }
+.footer__socials-img-tg{
+    margin-right: 7px;
+
+}
+
 }
 @media (hover:hover){
     .button:hover{
@@ -761,4 +815,6 @@ body{
       background-color: var(--button-hover-color);
     }
   }
+
+
 
